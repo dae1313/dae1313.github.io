@@ -1,8 +1,25 @@
 body {
-    background-color: green;
+    background-color: lavender;
 }
 
 nav > a {
-    color: darkcyan
+    color: teal;
 }
 
+h1, h2 {
+    color: darkgreen;
+    text-align: center;
+}
+
+.vietnam {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px; 
+    height: 400px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
