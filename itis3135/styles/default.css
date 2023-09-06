@@ -27,14 +27,17 @@ hr{
     background-color: lightgoldenrodyellow;
     border-color: lightgoldenrodyellow;
 }
+
 .contract{
     color: lightblue;
     font-family: verdana;
 }
+
 .info {
     color:lightblue;
     font-family: verdana;
 }
+
 .vietnam {
     display: block;
     margin-left: auto;
