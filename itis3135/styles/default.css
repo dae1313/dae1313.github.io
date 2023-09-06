@@ -1,16 +1,40 @@
 body {
-    background-color: lavender;
+    background-color: darkslategrey;
 }
 
-nav > a {
-    color: teal;
+nav > a, nav{
+    color: pink;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    font-family: Tahoma;
+}
+
+.bottominfo {
+    padding-top: 60px;
 }
 
 h1, h2 {
-    color: darkgreen;
+    color: goldenrod;
     text-align: center;
+    font-family: fantasy;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
+hr{
+    height: 5px;
+    background-color: lightgoldenrodyellow;
+    border-color: lightgoldenrodyellow;
+}
+.contract{
+    color: lightblue;
+    font-family: verdana;
+}
+.info {
+    color:lightblue;
+    font-family: verdana;
+}
 .vietnam {
     display: block;
     margin-left: auto;
@@ -22,4 +46,62 @@ h1, h2 {
 figcaption {
     text-align: center;
     font-style: italic;
+    color:lightgray;
+    font-family: verdana;
+    font-size: 15px;
 }
+
+.enterprise {
+    text-align: center;
+    color:lightblue;
+    padding-top: 5%;
+    font-size: 20px;
+}
+
+.valid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company {
+    color: pink;
+}
+
+.maininfo{
+    text-align: center;
+    color:powderblue;
+    font-size: 20px;
+    font-family: verdana;
+}
+
+.companyheader {
+    color: darkslategray;
+    font-size: 50px;
+}
+.companyhome {
+    color: lightseagreen;
+}
+
+.companycopyright {
+    color: brown;
+    text-align: center;
+    padding-top: 300px;
+    font-family: verdana;
+    font-size: 14px;
+}
+
+.companybackground {
+    background-color: rgb(191, 231, 244);
+}
+
+.slogan, .homeweb {
+    text-align: center;
+    font-family: verdana;
+    font-size: 15px;
+}
+
+.companyheader {
+    padding: 10px;
+}
+
