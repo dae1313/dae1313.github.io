@@ -75,33 +75,12 @@ figcaption {
     font-family: verdana;
 }
 
-.companyheader {
-    color: darkslategray;
-    font-size: 50px;
-}
-.companyhome {
-    color: lightseagreen;
-}
 
-.companycopyright {
-    color: brown;
-    text-align: center;
-    padding-top: 300px;
-    font-family: verdana;
-    font-size: 14px;
-}
 
-.companybackground {
-    background-color: rgb(191, 231, 244);
-}
 
-.slogan, .homeweb {
-    text-align: center;
-    font-family: verdana;
-    font-size: 15px;
-}
 
-.companyheader {
-    padding: 10px;
-}
+
+
+
+
 
