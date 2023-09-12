@@ -78,12 +78,83 @@ figcaption {
     font-family: verdana;
 }
 
+table {
+    margin: auto;
+}
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;;
+    font-family: verdana;
+    font-size: 15px;
+}
 
+th {
+    background-color: rgb(247, 193, 106);
+}
 
+table tr:nth-child(even) {
+    background-color: rgb(124, 197, 184);
+} 
 
+table tr:nth-child(odd) {
+    background-color: lightgoldenrodyellow
+} 
 
+td[headers="jobdescription"]{ 
+    background-color:  rgb(247, 193, 106);
+    font-weight: bold;
+    font-family: verdana;
+    font-size: 15px;;
+}
 
+.tablename{
+    text-align: center;
+    color: #daf69b;
+    font-family: verdana;
+}
 
+ol {
+    color: lightblue;
+    font-size: 18px;
+    font-family: verdana;
+}
+
+form {
+    border-width: 3px;
+    border-style: solid;
+    background-color: rgb(106, 188, 188);
+    font-family: verdana;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    color: rgb(3, 53, 53);;
+}
+
+input{
+    width: 100%;
+    border: 1px;
+    border-radius: 4px;
+    height: 20px;
+    
+}
+
+label {
+    display: block;
+}
+
+.contact, .hearus {
+    width: unset;
+    margin: 5px;
+}
+
+input[type="reset"], input[type="submit"]{
+    width: 100%;
+    font-family: verdana;
+    margin: 1em auto;
+    height: 3em;
+    display: block;
+}
 
 

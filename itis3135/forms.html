@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalena's Daffy Nightowl || ITIS 3135 Forms</title>
+    <link rel ="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <h1>Dalena's Daffy Nightowl || ITIS 3135</h1>
+        <hr>
+        <nav>
+            <a href = "./">Home</a>
+            ||
+            <a href = "introduction.html">Introduction</a>
+            ||
+            <a href = "contract.html">Contract</a>
+            ||
+            <a href = "tables.html">Tables</a>
+            ||
+            <a href = "forms.html">Forms</a>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <h2>Forms</h2>
+        <form action="#">
+            <div id="personal">
+            <label for="name">Name: <input type="text" id="name" placeholder="Name" class="infolabel" required></label>
+            <label for="phone">Phone Number: <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" class="infolabel" required></label>
+            <label for="email">Email Address: <input type="email" id="email" placeholder="Email" class="infolabel" required></label>
+            </div><br>
+            
+            <div id="contactmethod">
+            <label>Preferred Contact Method:</label>
+            <label for="contactEmail"><input type="checkbox" id="contactEmail" name="contact-Method" class="contact">Email</label>
+            <label for="contactPhone"><input type="checkbox" id="contactPhone" name="contact-Method" class="contact">Phone</label>    
+            </div><br>   
+            
+            <div id="status-employment">
+            <label for="status">What is your current employment status:</label>
+            <select id="status" name="status">
+                <option value="select">(Select one)</option>
+                <option value="self">Self-Employed</option>
+                <option value="employed">Employed</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="student">Student</option>
+            </select>
+            </div><br>
+
+            <div id="about-us">
+            <label>How did you hear about us?:</label>
+            <label for="news"><input type="radio" id="news" name="hear-us" class="hearus">Newspaper</label>
+            <label for="socialmedia"><input type="radio" id="socialmedia" name="hear-us" class="hearus">Social Media</label>
+            <label for="people"><input type="radio" id="people" name="hear-us" class="hearus">From a friend</label>
+            <label for="ad"><input type="radio" id="ad" name="hear-us" class="hearus">Advertisement</label>
+            <label for="other"><input type="radio" id="other" name="hear-us" class="hearus">Other</label>
+            </div>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <nav class="bottominfo">
+            <a href = "https://webpages.charlotte.edu/dngo5/">UNCC Webpage</a>
+            ||
+            <a href = "https://github.com/dae1313">GitHub</a>
+            ||
+            <a href = "https://dae1313.github.io/">GitHub.io</a>
+            ||
+            <a href = "https://dae1313.github.io/itis3135/">ITIS3135.io</a>
+            ||
+            <a href = "https://www.freecodecamp.org/dae1313">freeCodeCamp</a>
+            ||
+            <a href = "https://www.codecademy.com/profiles/dae13">Codecademy</a>
+            ||
+            <a href = "https://www.linkedin.com/in/dalena-ngo-25ab62175/">Linkedin</a>
+        </nav>
+        <p class="enterprise">Designed by <a href = "thengoenterprises.com/" class="company">The Ngo Enterprises</a>&copy; 2023 </p>
+        <div class="valid">
+            <a href="https://validator.w3.org/check?uri=referer" >
+            <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!" >
+           </a>           
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" >
+            <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
+            CSS!">
+            </a>       
+        </div>       
+    </footer>
+</body>
+</html>
