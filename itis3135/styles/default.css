@@ -22,6 +22,10 @@ h1, h2 {
     padding-bottom: 10px;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 hr{
     height: 5px;
     background-color: lightgoldenrodyellow;
@@ -155,6 +159,34 @@ input[type="reset"], input[type="submit"]{
     margin: 1em auto;
     height: 3em;
     display: block;
+}
+
+.goodsitetitle, .badsitetitle {
+    text-align: center;
+    font-size: 25px;
+    font-family: verdana;
+    border-color: black;
+}
+
+.goodsitetitle a, .badsitetitle a {
+    color: #c98313;
+}
+
+.goodsitetitle a:hover, .badsitetitle a:hover {
+    color: #ffc76d;
+    ;
+}
+
+.goodsite, .badsite {
+    width: 80%;
+    margin: 0 auto;
+    background-color: hsl(109, 24%, 72%);
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    color: rgb(22, 48, 59);
+    padding: 0 5px 5px 5px;
+    border-color: black;
 }
 
 
