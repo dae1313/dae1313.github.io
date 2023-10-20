@@ -100,6 +100,7 @@ th {
 
 table tr:nth-child(even) {
     background-color: rgb(124, 197, 184);
+    
 } 
 
 table tr:nth-child(odd) {
@@ -169,7 +170,7 @@ input[type="reset"], input[type="submit"]{
 }
 
 .goodsitetitle a, .badsitetitle a {
-    color: #c98313;
+    color: #800000;
 }
 
 .goodsitetitle a:hover, .badsitetitle a:hover {
@@ -180,13 +181,12 @@ input[type="reset"], input[type="submit"]{
 .goodsite, .badsite {
     width: 80%;
     margin: 0 auto;
-    background-color: hsl(109, 24%, 72%);
+    background-color: #C3E6CB;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
-    color: rgb(22, 48, 59);
+    color: rgb(19, 62, 80);
     padding: 0 5px 5px 5px;
-    border-color: black;
 }
 
 
