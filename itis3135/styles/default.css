@@ -173,11 +173,6 @@ input[type="reset"], input[type="submit"]{
     color: #800000;
 }
 
-.goodsitetitle a:hover, .badsitetitle a:hover {
-    color: #ffc76d;
-    ;
-}
-
 .goodsite, .badsite {
     width: 80%;
     margin: 0 auto;
