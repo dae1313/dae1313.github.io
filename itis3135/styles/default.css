@@ -129,7 +129,7 @@ ol {
 form {
     border-width: 3px;
     border-style: solid;
-    background-color: rgb(106, 188, 188);
+    background-color: rgb(119, 215, 215);
     font-family: verdana;
     width: 70%;
     margin: 0 auto;
@@ -182,6 +182,60 @@ input[type="reset"], input[type="submit"]{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
     color: rgb(19, 62, 80);
     padding: 0 5px 5px 5px;
+}
+
+#name-label, #mood-label, #number-label, #interactUser {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-family: Tahoma;
+    color:#a131bd;
+    font-weight: bold;
+}
+
+#name, #mood, #polyNumber{
+    width: 99%; 
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+#interactUser {
+    text-align: center;
+    background-color: rgb(170, 246, 246);
+    margin-bottom: 20px;
+    padding: 10px;
+    color:#a131bd;
+}
+
+#time {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    border: 5px solid black;
+    padding: 20px 5px 20px 5px;
+    border-style: inset;
+    background-color: rgb(170, 246, 246);
+    color: rgba(166, 34, 168, 0.927);
+    font-size: 19px;
+    font-weight: bold;
+}
+
+#function-box {
+    background-color: rgb(170, 246, 246)
+}
+
+#firstscriptbutton {
+    margin-top: 5px;
+    display: flex;
+}
+
+#function {
+    background-color: #38803a;
+    margin: 5px;  
+    color: white; 
+    padding: 10px 10px; 
+    cursor: pointer; 
+    border: none; 
+    border-radius: 15px; 
 }
 
 .slideshow-container {
@@ -243,7 +297,7 @@ img {
     border-radius: 5px 0 0 5px;
 }
 
-  .dot-container {
+.dot-container {
     text-align: center;
     margin-top: 20px;
 }
@@ -261,4 +315,3 @@ img {
 .dot:hover {
   transform: scale(1.7);
 }
-
