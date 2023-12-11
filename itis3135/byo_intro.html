@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalena's Daffy Nightowl || ITIS 3135 BYO INFO</title>
+    <link rel ="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <script src="scripts/HTMLInclude.js"></script></body>
+    <main id="byo-content">
+        <hr>
+        <h2>BYO INFO</h2>
+        <h3 class="maininfo">Create your own Byo Intro page. Please fill out the form below.</h3>
+        <form id="byo-form">
+            <div id="personal-information">
+                <label for="name-format-byo" class="name-byolabel">Name: </label>
+                <input type="text" id="name-byo" placeholder="Name" class="input-byo-class" required></label>
+                <label for="mascot-format" class="name-byolabel">Mascot: </label>
+                <input type="text" id="mascot" placeholder="Mascot" class="input-byo-class" required>
+                <label for="image-upload" class="name-byolabel">Upload image (PNG or JPG):</label>
+                <input id="image-file" name="image-file" type="file" accept="image/png, image/jpg" required>
+                <label for="image-caption" class="name-byolabel">Image caption: </label>
+                <input type="text" id="image-caption" placeholder="Write a caption" class="input-byo-class" required>
+            </div>
+            <div id="background-information-div">
+                <label for="personal-background" class="name-byolabel">Personal Background: </label>
+                <input type="text" id="personal-background" placeholder="Type here....." class="input-byo-class" required>
+                <label for="professional-background" class="name-byolabel">Professional Background: </label>
+                <input type="text" id="professional-background" placeholder="Type here....." class="input-byo-class" required>
+                <label for="academic-background" class="name-byolabel">Academic Background: </label>
+                <input type="text" id="academic-background" placeholder="Type here....." class="input-byo-class" required>
+                <label for="web-background" class="name-byolabel">Background in Web Development: </label>
+                <input type="text" id="web-background" placeholder="Type here....." class="input-byo-class" required>
+                <label for="platform-background" class="name-byolabel">Primary Computer Platform: </label>
+                <input type="text" id="platform-background" placeholder="Type here....." class="input-byo-class" required>
+                <label id="course-name" class="name-byolabel">Enter the name of the course you take: </label>
+                <input id="text-course" type="text" placeholder="Example: ITIS 3155 Web App Design and Development">
+                <button id="adding-courses" onclick="addCourses(event)">Add Course</button>
+                <button id="remove-courses" onclick="removeCourses(event)">Remove Course</button>
+                <label for="courses-background" class="name-byolabel">
+                    Courses currently taking: 
+                    <select id="select-courses" size="8" multiple></select>
+                </label>
+                <label id="funny-thing" class="name-byolabel">Funny thing to share: </label>
+                <textarea rows="8" cols="50"name="byo-textarea" for="funny-thing-text" id="funny-thing-text" placeholder="Type here...." required></textarea>
+                <label id="anything-info" class="name-byolabel">Anything else to share: </label>
+                <textarea rows="8" cols="50" name="byo-textarea" for="anything-text" id="anything-text" placeholder="Type here...." required></textarea>
+            </div>
+            <div id="checkbox-div">
+                <input type="checkbox" id="checkmark" required>
+                <label for="checkmark-sentence" id="checkmark-sentence">
+                    I understand that what is on this page is not password protected and I will not 
+                    put anything here that I don&#39t want publicly available.
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Submit" id="submit-button">
+                <input type="reset" value="Reset" id="reset-button">
+            </div>
+        </form>
+        <script src="scripts/survey.js"></script>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script></body>
+    <script src="scripts/survey.js"></script>
+</html>
