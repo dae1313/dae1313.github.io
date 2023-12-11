@@ -126,7 +126,8 @@ ol {
     font-family: verdana;
 }
 
-form {
+
+#form-info {
     border-width: 3px;
     border-style: solid;
     background-color: rgb(119, 215, 215);
@@ -137,12 +138,16 @@ form {
     color: rgb(3, 53, 53);;
 }
 
-input{
+#name-info, #phone-info, #email-info{
     width: 100%;
     border: 1px;
     border-radius: 4px;
-    height: 20px;
-    
+    height: 30px;
+}
+
+#name-formlabel, #phone-formlabel, #email-formlabel {
+    margin-bottom: 15px;
+    margin-top: 5px;
 }
 
 label {
@@ -154,12 +159,13 @@ label {
     margin: 5px;
 }
 
-input[type="reset"], input[type="submit"]{
+#form-submit, #form-reset{
     width: 100%;
     font-family: verdana;
     margin: 1em auto;
     height: 3em;
     display: block;
+    cursor: pointer;
 }
 
 .goodsitetitle, .badsitetitle {
@@ -314,4 +320,111 @@ img {
 
 .dot:hover {
   transform: scale(1.7);
+}
+
+/* byo-intro.html css style*/
+
+#byo-form {
+    border-width: 3px;
+    border-style: solid;
+    background-color: rgb(141, 236, 236);
+    font-family: verdana;
+    width: 45%;
+    margin: 0 auto;
+    padding: 20px;
+    color: rgb(3, 53, 53);;
+}
+
+
+#select-courses {
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    border: 2px solid black;
+}
+
+#text-course {
+    width: 400px;
+    display: flex;
+    margin-bottom: 10px;
+    height: 25px;
+}
+
+#course-name{
+    margin-top: 10px;
+}
+
+#funny-thing, #anything-info{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    #funny-thing-text, #anything-text, #text-course, #select-courses{
+        width: 100%; 
+    }
+}
+
+#checkbox-div {
+    border-top: 3px solid rgba(0, 137, 140, 0.998);
+    border-bottom: 3px solid rgba(0, 137, 140, 0.998);
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: left;
+    
+}
+
+#checkmark {
+    width: auto;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#checkmark-sentence {
+    font-size: 15px;
+    color: rgb(201, 119, 25);
+    font-weight: bold;
+}
+
+#submit-button, #reset-button{
+    width: 100%;
+    font-family: verdana;
+    margin: 1em auto;
+    height: 3em;
+    display: block;
+    cursor: pointer;
+}
+
+.input-byo-class{
+    width: 100%;
+    border:1px;
+    border-radius: 4px;
+    height: 35px;
+}
+
+.name-byolabel {
+    margin-bottom: 8px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-family: "Tahoma";
+    font-size: 18px;
+    color: #056a3c;
+}
+
+#image-file {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.select-options {
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
 }
