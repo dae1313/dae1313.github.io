@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dalena's Daffy Nightowl || ITIS 3135 FirstScripts</title>
     <link rel ="stylesheet" href="styles/default.css">
+    <script src="scripts/defaultscripts.js"></script>
 </head>
 <body>
     <header>
@@ -30,7 +31,37 @@
         </nav>
     </header>
     <main>
+        <h2>First Scripts </h2>
+        <form id="form-info">
+            <h3 id="time"></h3>
+            <fieldset id="function-box">
+                <label for="name" id="name-label">
+                    Enter Your Name: 
+                </label> 
+                <input id="name" type="text" placeholder="Name" required>    
+                <label for="mood" id="mood-label">
+                    Enter Your Mood Today: </label>
+                <input id="mood" type="text" placeholder="Mood" required>
+                <button onclick="getFeeling()" id="firstscriptbutton">Submit</button>
+            </fieldset>
+        </form>
+        <form id="form-info">
+            <fieldset id="function-box">
+                <label for="polyNumber" id="number-label">
+                    Enter a Number from 1 to 10: </label>
+                <input id="polyNumber" type="text" name="number" placeholder="Enter a number">
+                <button onclick="getPolygonNumber()" id="firstscriptbutton">Submit</button>
+            </fieldset>
+        </form>
 
+        <form id="form-info">
+            <p id="interactUser">Try out these buttons: </p>
+            <button onclick="getFacts()" id="function">Facts About Nightowl</button>
+            <button onclick="getMixedColors()" id="function">Mix Pimary Colors</button>
+            <button onclick="getLuckNumber()" id="function">Guess The Lucky Number</button>
+            <button onclick="interactAnimal()" id="function">Interact with Timmy the Nightowl</button>
+        </form>
+        <script src="scripts/defaultscripts.js"></script>
     </main>
     <footer>
         <nav class="bottominfo">
@@ -50,10 +81,10 @@
         </nav>
         <p class="enterprise">Page designed by <a href = "thengoenterprises.com/thengoenterprises.html" class="company">The Ngo Enterprises</a>&copy; 2023 </p>
         <div class="valid">
-            <a href="https://validator.w3.org/check?uri=referer" >
+            <a href="https://validator.w3.org/check?uri=referer" id="html-valid">
             <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!" >
            </a>           
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" >
+            <a href="https://jigsaw.w3.org/css-validator/check/referer"  id="css-valid">
             <img style="border:0;width:88px;height:31px"
             src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
             CSS!">
