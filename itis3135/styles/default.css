@@ -537,6 +537,7 @@ img {
     width: 20%;
     margin-bottom: 50px;
     font-size: 40px;
+    position: relative;
 }
 
 .emmet-examples{
