@@ -1,7 +1,7 @@
 body {
     background-color: darkslategrey;
 }
-
+/*header and footer style*/
 nav > a, nav{
     color: pink;
     text-align: center;
@@ -14,6 +14,15 @@ nav > a, nav{
 .nav-link-header:hover, .nav-link-header.active {
     color: rgb(253, 111, 135);
 }
+
+@media only screen and (max-width: 768px) {
+    nav > a, nav {
+        padding: 15px; 
+        padding-bottom: 10px;
+        font-size: 19px; 
+    }
+}
+
 .bottominfo {
     padding-top: 100px;
 }
@@ -42,12 +51,14 @@ hr{
     margin-top: 100px;
 }
 
+/*contract.html style*/
 .contract{
     color: lightblue;
     font-family: verdana;
     font-size: 21px;
 }
 
+/*introduction.html style*/
 .info {
     color:lightblue;
     font-size: 21px;
@@ -94,7 +105,7 @@ figcaption {
     font-size: 20px;
     font-family: verdana;
 }
-
+/*tables.html style*/
 table {
     margin: auto;
 }
@@ -139,7 +150,7 @@ ol {
     font-family: verdana;
 }
 
-
+/*form.html style*/
 #form-info {
     border-width: 3px;
     border-style: solid;
@@ -181,6 +192,7 @@ label {
     cursor: pointer;
 }
 
+/*website_evaluations.html style*/
 .goodsitetitle, .badsitetitle {
     text-align: center;
     font-size: 25px;
@@ -203,6 +215,27 @@ label {
     padding: 0 5px 5px 5px;
 }
 
+@media only screen and (max-width: 780px) {
+    .goodsitetitle, .badsitetitle {
+        font-size: 20px; 
+
+    }
+    .goodsite, .badsite {
+        width: 90%; 
+    }
+}
+
+@media only screen and (max-width: 434px) {
+    .goodsitetitle, .badsitetitle {
+        font-size: 26px; 
+    }
+
+    .goodsite, .badsite {
+        width: 100%; 
+    }
+}
+
+/*Firstscripts.html style*/
 #name-label, #mood-label, #number-label, #interactUser {
     display: block;
     margin-bottom: 5px;
@@ -257,6 +290,7 @@ label {
     border-radius: 15px; 
 }
 
+/*slideshow.html style*/
 .slideshow-container {
     position: relative;
     margin: auto;
@@ -528,6 +562,7 @@ img {
 }
 
 /*emmet.html style*/
+/* Common styles for all screen sizes */
 #emmet-h2 {
     border: 9px dotted lightgoldenrodyellow;
     border-top: none;
@@ -540,7 +575,7 @@ img {
     position: relative;
 }
 
-.emmet-examples{
+.emmet-examples {
     position: relative;
     top: 50%;
     left: 50%;
@@ -588,3 +623,34 @@ img {
     border-collapse: collapse;
     height: 200%;
 }
+
+
+@media only screen and (max-width: 770px) {
+    #emmet-h2 {
+        width: 52%; 
+    }
+
+    .emmet-examples {
+        font-size: 18px;
+        width: 90%; 
+    }
+
+    .emmetInfo,
+    .emmet-div,
+    .emmet-table {
+        transform: translate(0%, 0%);
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    #emmet-h2 {
+        width: 80%; 
+    }
+
+    .emmet-examples {
+        font-size: 16px;
+        width: 95%; 
+    }
+}
+
