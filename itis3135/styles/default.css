@@ -41,11 +41,14 @@ hr{
 .contract{
     color: lightblue;
     font-family: verdana;
+    font-size: 21px;
 }
 
 .info {
     color:lightblue;
+    font-size: 21px;
     font-family: verdana;
+
 }
 
 .vietnam {
