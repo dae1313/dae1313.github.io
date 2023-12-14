@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalena's Daffy Nightowl || ITIS 3135 Arrays</title>
+    <link rel ="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <script src="scripts/arrays.js"></script>
+    <div data-include="components/header.html"></div>
+    <script src="scripts/HTMLInclude.js"></script></body>
+    <main>
+        <h2>Arrays</h2>
+        <div class="arrays-body">
+        <div class="arrays-div">
+            <p class="arrays-instruction">Enter the name of the employee and the salary in the box:</p>
+
+            <label for="employee-name">Name: </label>
+            <input type="text" class="arrays-input" id="employee-name" placeholder="Enter name" required>
+
+            <label for="employee-salary">Salary: </label>
+            <input type="number" class="arrays-input" id="employee-salary" placeholder="Enter number" required>
+           
+
+            <button type="button" id="employee-submit" onclick="addSalary()">Add Salary</button>
+            <div id="employee-input-display"></div> 
+
+            <label>Check an employee's salary:</label>
+                <select id="employee-list-select">
+                    <option value="select-options-value">--Employee List--</option>
+                    <option value="phoebe">Phoebe</option>
+                    <option value="monica">Monica</option>
+                    <option value="rachel">Rachel</option>
+                    <option value="joey">Joey</option>
+                    <option value="chandler">Chandler</option>
+                    <option value="ross">Ross</option>
+                </select>
+            <button type="button" id="employeeSelectButton" onclick="displaySelected()">Display Employee </button>
+            <div id="employee-select-display"></div>  
+
+            <p>Click the buttons below again if you update the table</p>
+            <button type="button" id="average_highest_button" class="button button1" onclick="displayResults()">Display Average/Highest Number</button>
+            <div id="results"></div>
+        
+            <div id="table-content"></div>
+            <button type="button" id="table-button" class="button button2" onclick="displaySalary()">Display Table</button>
+            <table id="results_table">
+                <thead>
+                    <tr>
+                        <th>Employee Name</th>
+                        <th>Salary</th>
+                    </tr>
+                    <tbody id="employee-tbody">
+                    </tbody>
+                </thead>
+            </table>
+
+
+        </div>
+        </div>
+    </main>
+    <script src="scripts/arrays.js"></script>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.js"></script></body>
+</html>
