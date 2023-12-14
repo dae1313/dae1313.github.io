@@ -654,3 +654,140 @@ img {
     }
 }
 
+/*arrays.html style*/
+.arrays-body {
+    border: 2px solid black;
+    max-width: 500px;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #6ce0ac;
+    box-sizing: border-box;
+}
+
+.arrays-instruction {
+    font-size: 24px;
+    color:#2213aa;
+    border: 5px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 439px;
+    box-sizing: border-box;
+}
+
+.arrays-div {
+    font-family: Verdana, Geneva, Tahoma;
+    color:#4539b5;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+#results_table {
+    margin-bottom: 20px;
+    display: none;
+}
+
+.arrays-input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 20px;
+}
+
+#employee-submit, #employeeSelectButton {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    border-radius: 18px;
+    width: 200px;
+    height: 30px;
+    margin: auto;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Verdana;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#employee-select-display, #employee-input-display {
+    border: 3px dotted rgb(41, 120, 20);
+    position: relative;
+    border-left: none;
+    border-right: none;
+    width: 463px;
+    font-size: 15px;
+    margin-bottom: 20px;
+    color:rgba(124, 58, 163, 0.998);
+    box-sizing: border-box;
+}
+
+
+#employee-list-select {
+    width: 200px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+#average_highest_button, #table-button {
+    font-size: 19px;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    margin: auto;
+    font-family: Verdana;
+}
+
+#results {
+    width: 419px;
+    color: pink;
+    margin: auto;
+    padding: auto;
+}
+
+#results h2 {
+    color: rgb(172, 15, 15);
+}
+
+#results p {
+    color: rgb(22, 18, 238);
+}
+
+#table-button {
+    width: 336px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button1, .button2 {
+    color: pink;
+    background-color: #471f51;
+}
+
+.button1:hover, .button2:hover {
+    background-color: pink;
+    color: #471f51;
+}
+
+@media screen and (max-width: 600px) {
+    .arrays-body  {
+        margin: 10px; 
+        overflow: hidden;
+        width:  450px;
+    }
+
+    .arrays-instruction {
+        margin: 10px 0; 
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+
+}
