@@ -151,7 +151,7 @@
             padding-bottom: 85px;
         }
 
-        #aboutMe, #Places {
+        #aboutMe, #Places, #Foods, #Future {
             background-color: rgb(255, 244, 230);
             padding-bottom: 150px;
         }
@@ -169,6 +169,7 @@
         }
 
         .sideshow-content-div {
+            position: relative;
             justify-content: center;
             align-items: center;
             display: flex;
@@ -177,6 +178,7 @@
             width: 750px;
             height: auto;
             max-width: 750px;
+            
         }
 
         .slidepicture {
@@ -209,7 +211,7 @@
         .prev, .next {
             cursor: pointer;
             position: fixed;
-            top: 55%;
+            top: 35%;
             width: auto;
             padding: 17px;
             color: white;
@@ -224,7 +226,7 @@
 
         .prev {
             left: 0;
-            margin-left: 227px;
+            margin-left: -110px;
             position: absolute;
             display: block;
         }
@@ -253,7 +255,42 @@
                 margin-left: 100px;
             }
 
-}
+        }
+        .food-container {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fav-food1{
+            width: 350px;
+            height: 500px;
+            padding-left: 80px;
+        }
+
+        .fav-food2,.fav-food3 {
+            width: 400px;
+            height: 500px;
+        }
+
+        .fav-food2 {
+            padding-left: 50px;
+        }
+
+        .fav-food3 {
+            padding-left: 50px;
+        }
+
+        .foods-info {
+            text-align: center;
+            color: rgb(69, 4, 166);
+            font-size: 20px;
+            font-family: Tahoma;
+        }
+
+        .future-image1 {
+            padding-left: 50px;
+            padding-right: 90px;
+        }
     </style>
 </head>
 <body>
@@ -327,16 +364,30 @@
             </div>
             </div>
         </div>
+            <p class="firstInfo">This is pictures from places that I went these past few years. I picked the ones that was my favorite from my photo album. It was a great experience. </p>
+            <p class="secondInfo">Out of 6 pictures, I think I liked the Cat Cat village picture(the last picture). It took us a few hours to get there but the place was very beautiful. There were music, markets stalls, food, small cafes, and dancing there.</p>
         </section>
 
         <section id="Foods">
-            <h2>Foods</h2>
-            <p>To</p>
+            <h2 class="welcome" id="aboutme-info">Foods</h2>
+            <p class="foods-info">This is my top 3 foods:</p>
+            <div class="food-container">
+                <img src="https://dae1313.github.io/itis3135/hobby/images/beo.JPG" alt="food" class="fav-food1">
+                <img src="https://dae1313.github.io/itis3135/hobby/images/banhcuon.png" alt="food" class="fav-food2">
+                <img src="https://dae1313.github.io/itis3135/hobby/images/koreanbbq.png" alt="food" class="fav-food3">
+            </div>
+            <p class="foods-info">1. Banh Beo (similar to rice cakes) </p>
+            <p class="foods-info">2.Banh Cuon (vietnamese rice rolls)</p>
+            <p class="foods-info">3. Korean bbq</p>
         </section>
 
         <section id="Future">
-            <h2>Future</h2>
-            <p>water</p>
+            <h2 class="welcome" id="aboutme-info">Future</h2>
+            <p class="maininfo">In the future, I wanted to travel to Paris, Australia, South Korea, and Hawaii in the future.</p>
+            <div class="food-container">
+            <img src="https://dae1313.github.io/itis3135/hobby/images/australia.png" alt="future" class="future-image1">
+            <img src="https://dae1313.github.io/itis3135/hobby/images/hawaii.png" alt="future" class="future-image2">
+            </div>
         </section>
 
     </main>
