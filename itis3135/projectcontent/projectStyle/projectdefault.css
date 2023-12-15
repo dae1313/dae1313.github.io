@@ -193,3 +193,36 @@ footer {
     cursor: pointer;
   }
 
+.nails-pic, .pedi-pic {
+    width: 290px;
+    height: 290px;
+    border: none;
+    border-radius: 190px;
+    display: flex;
+}
+
+.mani-container, .pedi-container {
+   font-size: 30px;
+   margin-left: 300px;
+   width: 1100px;
+   justify-content: center;
+   align-items: center;
+}
+
+.mani-info, .pedi-info {
+    display: block;
+    position: relative;
+   
+}
+
+.main-info-div, .pedi-info-div {
+    width: 250px;
+    margin-left: 500px;
+    margin-top: -290px;
+}
+
+.service-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
