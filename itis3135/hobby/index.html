@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            
+        }
+
+        .active {
+            display: block;
+        }
+
+        header {
+            background-color: #2b4261;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+            font-size: 25px;
+            font-family: impact;
+        }
+        
+        footer {
+            background-color: #2b4261;
+            margin: 0;
+            padding: 0;
+            border: 1px solid #2b4261;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        li {
+            margin-right: 15px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .name-header {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            text-align: center;
+            font-size: 3em;
+            border: 4px solid rgba(255, 255, 255, 0.354);
+            font-weight: bold;
+            padding: 20px;
+            background-color: rgba(173, 216, 230, 0.873);
+            font-family: Helvetica;
+        }
+
+        
+        .sky-pic {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            height: 600px;
+            object-fit: cover;
+            filter: brightness(120%);
+        }
+
+        .welcome {
+            text-align: center;
+            font-size: 30px;
+            font-family: Verdana;
+        }
+
+        .maininfo {
+            text-align: left;
+            padding-bottom: 90px;
+            font-size: 20px;
+            font-family: Tahoma;
+            padding-top: 30px;
+            width: 850px;
+            align-items: center;
+            margin: auto;
+            color: rgb(69, 4, 166);
+        }
+
+        .firstInfo, .secondInfo {
+            text-align: left;
+            padding-bottom: 10px;
+            font-size: 20px;
+            font-family: Tahoma;
+            padding-top: 30px;
+            width: 850px;
+            align-items: center;
+            margin: auto;
+            color: rgb(69, 4, 166);
+        }
+
+        .enterprise {
+            text-align: center;
+            color: rgb(150, 215, 235);
+            font-size: 17px;
+        }
+
+        .company {
+            color: rgb(28, 199, 125);
+        }
+
+        .valid {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+
+        .hand-pic, .food-pic {
+            width: 485px;
+            height: 585px;
+            padding-top: 20px;
+        }
+ 
+        .image-container {
+            justify-content: center;
+            text-align: center;
+        }
+
+        figcaption {
+            color:rgb(114, 117, 38);
+            font-family: Trebuchet MS;
+        }
+
+        #home {
+            background-color: rgb(255, 244, 230);
+            margin: 0 auto;
+            padding-bottom: 85px;
+        }
+
+        #aboutMe {
+            background-color: rgb(255, 244, 230);
+            padding-bottom: 150px;
+        }
+
+        #aboutme-info {
+            padding-top: 30px;
+            margin: auto;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="travel">Hobby: Travel</div>
+            <ul>
+                <li><a href="#home" id="home-nav">Home</a></li>
+                <li><a href="#aboutMe" id="aboutme-nav">About Me</a></li>
+                <li><a href="#Places" id="places-nav">Places</a></li>
+                <li><a href="#Foods" id="foods-nav">Foods</a></li>
+                <li><a href="#Future" id="future-nav">Future</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="active">
+            <img src="/dae1313.github.io/itis3135/hobby/images/sky.png" alt="sky" class="sky-pic">
+            <p class="name-header">Welcome To My Hobby Page</p>
+            <h2 class="welcome">Hobby: Travel </h2>
+            <p class="maininfo">Greetings and welcome to my hobby page where I talk about my passion for traveling. I am excited to share my adventures and expereinces with you. Please feel free to explore the webiste.</p>
+            <div class="image-container">
+                <img src="/dae1313.github.io/itis3135/hobby/images/hand.png" alt="hand" class="hand-pic">
+                <figcaption>Ba Na Hills, Vietnam</figcaption>
+            </div>
+        </section>
+
+        <section id="aboutMe"> 
+            <h2 class="welcome" id="aboutme-info">About Me</h2>
+            <p class="firstInfo">My name is Dalena Ngo, and I derive joy from traveling in my personal life. There are several reasons behind my love for exploration, with the primary focus being food. I take pleasure in discovering new foods and learning about the different cultures.</p>
+            <p class="secondInfo">I enjoy eating different kinds of food and exploring new places. Trying local dishes is fun, and I enjoy seeing new things, like the beautiful scenery and lively markets.</p>
+            <div class="image-container">
+                <img src="/dae1313.github.io/itis3135/hobby/images/food.png" alt="food" class="food-pic">
+                <figcaption>Exploring the market in Vietnam</figcaption>
+            </div>
+        </section>
+
+        <section id="Places">
+            <h2>Places</h2>
+            <div class="sideshow-container">
+                <div class="slides">
+                    <div class="slidenumber">1 / 6</div>
+                    <img src="/dae1313.github.io/itis3135/hobby/images/cave.png" alt="image_1" class="slidepicture">
+                </div>
+                <div class="slides">
+                    <div class="slidenumber">2 / 6</div>
+                    <img src="/dae1313.github.io/itis3135/hobby/images/water.png" alt="image_2" class="slidepicture">
+                </div>
+                <div class="slides">
+                    <div class="slidenumber">3 / 6</div>
+                    <img src="/dae1313.github.io/itis3135/hobby/images/nightlight.jpg" alt="image_3" class="slidepicture">
+                </div>
+                <div class="slides">
+                    <div class="slidenumber">4 / 6</div>
+                    <img src="/dae1313.github.io/itis3135/hobby/images/pond.png" alt="image_4" class="slidepicture">
+                </div>
+                <div class="slides">
+                    <div class="slidenumber">5 / 6</div>
+                    <img src="/dae1313.github.io/itis3135/hobby/images/view.png" alt="image_5" class="slidepicture">
+                </div>
+                <div class="slides">
+                    <div class="slidenumber">6 / 6</div>
+                    <img src="/dae1313.github.io/itis3135/hobby/images/village.png" alt="image_6" class="slidepicture">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)"> d </a>
+                <a class="next" onclick="plusSlides(1)"> 1 </a>
+            </div>
+        </section>
+
+        <section id="Foods">
+            <h2>Foods</h2>
+            <p>To</p>
+        </section>
+
+        <section id="Future">
+            <h2>Future</h2>
+            <p>water</p>
+        </section>
+
+    </main>
+    <footer>
+        <p class="enterprise">Page designed by <a href = "/dae1313.github.io/itis3135/thengoenterprises.com/thengoenterprises.html" class="company">The Ngo Enterprises</a>&copy; 2023, <a href="https://www.freecodecamp.org/certification/dae1313/responsive-web-design" class="company">Certified in JS</a> </p>
+        <div class="valid">
+            <a href="https://validator.w3.org/check?uri=referer" >
+            <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!" >
+           </a>           
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" >
+            <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid
+            CSS!">
+            </a>       
+        </div>
+        <script>
+            document.getElementById("valid-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("valid-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>  
+    </footer>
+    <script>
+        /*document.querySelectorAll('section').forEach(section => {
+            section.classList.add('active');
+        });*/
+        document.addEventListener('DOMContentLoaded', function() {
+        var allNav = document.querySelectorAll('nav ul a');
+
+        allNav.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); 
+
+                var navTarget = link.getAttribute('href').substring(1);
+
+                document.querySelectorAll('section').forEach(function(section) {
+                    section.classList.remove('active');
+                });
+                document.getElementById(navTarget).classList.add('active');
+            });
+        });
+    });
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].classList.remove("active");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].classList.add("active");
+    
+}
+    </script>
+</body>
+</html>
