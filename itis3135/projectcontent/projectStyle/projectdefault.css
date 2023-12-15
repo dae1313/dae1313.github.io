@@ -110,3 +110,50 @@ footer {
 
 }
 
+.div-container {
+    justify-content: center;
+    text-align: center;
+}
+
+.about-us-name {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+.client-background {
+    position: relative;
+    margin-left: 20%;
+    width: 60%;
+}
+
+.background-info {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 90px;
+    font-family:Verdana, Geneva, Tahoma;
+  }
+
+  .contact-section {
+    margin-bottom: 20px;
+  }
+
+  .contact-label {
+    font-weight: bold;
+  }
+
+  .contact-name {
+    text-align: center;
+    font-size: 27px;
+  }
+
+
