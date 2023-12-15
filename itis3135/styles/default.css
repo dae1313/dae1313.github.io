@@ -5,7 +5,7 @@ body {
 nav > a, nav{
     color: pink;
     text-align: center;
-    font-size: 21px;
+    font-size: 20px;
     padding: 20px;
     font-family: Tahoma;
     padding-bottom: 30px;
@@ -43,7 +43,7 @@ hr{
     height: 5px;
     background-color: lightgoldenrodyellow;
     border-color: lightgoldenrodyellow;
-    margin-top: 20px;
+    
 }
 
 .hr-footer {
