@@ -12,7 +12,7 @@
         }
 
         section {
-            
+            display: none;  
         }
 
         .active {
@@ -151,7 +151,7 @@
             padding-bottom: 85px;
         }
 
-        #aboutMe {
+        #aboutMe, #Places {
             background-color: rgb(255, 244, 230);
             padding-bottom: 150px;
         }
@@ -161,9 +161,99 @@
             margin: auto;
         }
 
-        
+        .slideshow-div {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding-top: 40px;
+        }
+
+        .sideshow-content-div {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            border: 4px solid black;
+            background-color: white;
+            width: 750px;
+            height: auto;
+            max-width: 750px;
+        }
+
+        .slidepicture {
+            width: 500px;
+            height: auto;
+        }
+
+        .slideshow-container {
+            justify-content: center;
+            margin: auto;
+            max-width: 400px;
+        }
+
+        .slides {
+            position: relative;
+        }
+
+        .slidenumber {
+            position: absolute;
+            top: 0px;
+            left: 00px;
+            font-size: 16px;
+            color: rgb(211, 175, 223);
+            background-color: rgba(70, 65, 65, 0.887);
+            padding: 10px;
+            padding-left: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: fixed;
+            top: 55%;
+            width: auto;
+            padding: 17px;
+            color: white;
+            font-weight: bold;
+            font-size: 38px;
+            background-color: black;
+            border-radius: 17px;
+            transform: translateY(50%);
+            outline: none;
+            border: none;
+        }
+
+        .prev {
+            left: 0;
+            margin-left: 227px;
+            position: absolute;
+            display: block;
+        }
+
+        .next {
+            margin-left: 683px;
+            right: 5;
+            position: absolute;
+        }
 
 
+        @media screen and (max-width: 600px) {
+            .prev, .next {
+                width: 40px; 
+                font-size: 18px; 
+                position: absolute;
+            }
+
+            .prev {
+                left: 0;
+                margin-right: 700px;
+            }
+
+            .next {
+                right: 0;
+                margin-left: 100px;
+            }
+
+}
     </style>
 </head>
 <body>
@@ -181,12 +271,12 @@
     </header>
     <main>
         <section id="home" class="active">
-            <img src="/dae1313.github.io/itis3135/hobby/images/sky.png" alt="sky" class="sky-pic">
+            <img src="https://dae1313.github.io/itis3135/hobby/images/sky.png" alt="sky" class="sky-pic">
             <p class="name-header">Welcome To My Hobby Page</p>
             <h2 class="welcome">Hobby: Travel </h2>
             <p class="maininfo">Greetings and welcome to my hobby page where I talk about my passion for traveling. I am excited to share my adventures and expereinces with you. Please feel free to explore the webiste.</p>
             <div class="image-container">
-                <img src="/dae1313.github.io/itis3135/hobby/images/hand.png" alt="hand" class="hand-pic">
+                <img src="https://dae1313.github.io/itis3135/hobby/images/hand.png" alt="hand" class="hand-pic">
                 <figcaption>Ba Na Hills, Vietnam</figcaption>
             </div>
         </section>
@@ -196,41 +286,47 @@
             <p class="firstInfo">My name is Dalena Ngo, and I derive joy from traveling in my personal life. There are several reasons behind my love for exploration, with the primary focus being food. I take pleasure in discovering new foods and learning about the different cultures.</p>
             <p class="secondInfo">I enjoy eating different kinds of food and exploring new places. Trying local dishes is fun, and I enjoy seeing new things, like the beautiful scenery and lively markets.</p>
             <div class="image-container">
-                <img src="/dae1313.github.io/itis3135/hobby/images/food.png" alt="food" class="food-pic">
+                <img src="https://dae1313.github.io/itis3135/hobby/images/food.png" alt="food" class="food-pic">
                 <figcaption>Exploring the market in Vietnam</figcaption>
             </div>
         </section>
 
         <section id="Places">
-            <h2>Places</h2>
+            <h2 class="welcome" id="aboutme-info">Places</h2>
+            <div class="slideshow-div">
+            <div class="sideshow-content-div">
             <div class="sideshow-container">
                 <div class="slides">
                     <div class="slidenumber">1 / 6</div>
-                    <img src="/dae1313.github.io/itis3135/hobby/images/cave.png" alt="image_1" class="slidepicture">
+                    <img src="https://dae1313.github.io/itis3135/hobby/images/cave.png" alt="image_1" class="slidepicture">
                 </div>
                 <div class="slides">
                     <div class="slidenumber">2 / 6</div>
-                    <img src="/dae1313.github.io/itis3135/hobby/images/water.png" alt="image_2" class="slidepicture">
+                    <img src="https://dae1313.github.io/itis3135/hobby/images/building.png" alt="image_2" class="slidepicture">
                 </div>
                 <div class="slides">
                     <div class="slidenumber">3 / 6</div>
-                    <img src="/dae1313.github.io/itis3135/hobby/images/nightlight.jpg" alt="image_3" class="slidepicture">
+                    <img src="https://dae1313.github.io/itis3135/hobby/images/nightlight.jpg" alt="image_3" class="slidepicture">
                 </div>
                 <div class="slides">
                     <div class="slidenumber">4 / 6</div>
-                    <img src="/dae1313.github.io/itis3135/hobby/images/pond.png" alt="image_4" class="slidepicture">
+                    <img src="https://dae1313.github.io/itis3135/hobby/images/pond.png" alt="image_4" class="slidepicture">
                 </div>
                 <div class="slides">
                     <div class="slidenumber">5 / 6</div>
-                    <img src="/dae1313.github.io/itis3135/hobby/images/view.png" alt="image_5" class="slidepicture">
+                    <img src="https://dae1313.github.io/itis3135/hobby/images/view.png" alt="image_5" class="slidepicture">
                 </div>
                 <div class="slides">
                     <div class="slidenumber">6 / 6</div>
-                    <img src="/dae1313.github.io/itis3135/hobby/images/village.png" alt="image_6" class="slidepicture">
+                    <img src="https://dae1313.github.io/itis3135/hobby/images/village.png" alt="image_6" class="slidepicture">
                 </div>
-                <a class="prev" onclick="plusSlides(-1)"> d </a>
-                <a class="next" onclick="plusSlides(1)"> 1 </a>
+                <div class="arrows">
+                <p class="prev" onclick="plusSlides(-1)"> < </p>
+                <p class="next" onclick="plusSlides(1)"> > </p>
+                </div>
             </div>
+            </div>
+        </div>
         </section>
 
         <section id="Foods">
