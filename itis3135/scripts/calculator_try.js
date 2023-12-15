@@ -25,7 +25,7 @@ function displayNumber(button){
 */
 
 
-/*
+/* not workiing 
 var total = 0;
 var value = "";
 
