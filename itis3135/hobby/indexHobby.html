@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby: Travel</title>
     <style>
+        /*Nav menu*/
         body {
+            background-color: #fcf3dc;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         section {
-            display: none;  
+            display: none;
         }
 
         .active {
@@ -26,13 +31,6 @@
             text-align: center;
             font-size: 25px;
             font-family: impact;
-        }
-        
-        footer {
-            background-color: #2b4261;
-            margin: 0;
-            padding: 0;
-            border: 1px solid #2b4261;
         }
 
         nav {
@@ -49,14 +47,43 @@
             display: flex;
         }
 
-        li {
-            margin-right: 15px;
-        }
-
         a {
             color: #fff;
             text-decoration: none;
         }
+
+        li {
+        margin-right: 15px;
+        position: relative; 
+        }
+
+        @media only screen and (max-width: 750px) {
+
+        nav {
+            font-size: 19px;
+        }
+
+        }
+
+        a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            bottom: -2px;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: 50% 100%;
+            transition: transform 0.5s ease;
+        }
+
+        a:hover::before {
+            transform: scaleX(1);
+            transform-origin: 50% 0%;
+        }
+
+    /*home page style*/
 
         .name-header {
             position: absolute;
@@ -66,21 +93,20 @@
             color: black;
             text-align: center;
             font-size: 3em;
-            border: 4px solid rgba(255, 255, 255, 0.354);
+            border: 4px solid rgba(255,255,255,.354);
             font-weight: bold;
             padding: 20px;
-            background-color: rgba(173, 216, 230, 0.873);
+            background-color: rgba(238, 224, 100, 0.873);
             font-family: Helvetica;
         }
 
-        
         .sky-pic {
             display: block;
             width: 100%;
             margin: 0 auto;
-            height: 600px;
+            height: 570px;
             object-fit: cover;
-            filter: brightness(120%);
+            filter: brightness(100%);
         }
 
         .welcome {
@@ -92,28 +118,79 @@
 
         .maininfo {
             text-align: left;
-            padding-bottom: 90px;
+            padding-bottom: 70px;
             font-size: 20px;
             font-family: Tahoma;
             padding-top: 30px;
             width: 850px;
             align-items: center;
             margin: auto;
-            color: rgb(69, 4, 166);
+            color: rgb(10, 49, 108);
+            inline-size: 650px;
         }
 
-        .firstInfo, .secondInfo {
-            text-align: left;
-            padding-bottom: 10px;
-            font-size: 20px;
-            font-family: Tahoma;
-            padding-top: 30px;
-            width: 850px;
-            align-items: center;
-            margin: auto;
-            color: rgb(69, 4, 166);
+        .hand-pic, .hike-pic,.car-pic{
+            width: 335px;
+            height: 455px;
         }
 
+        .car-pic {
+            width: auto;
+            transform: rotate(90deg);
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-left: 350px
+        }
+
+        figcaption {
+            color: rgb(45, 9, 48);
+            font-family: Trebuchet MS;
+            padding-top: 10px;
+            padding-bottom: 40px;
+        }
+/*
+        .image-container {
+            position: absolute;
+            justify-content: space-around;
+            text-align: center; 
+            display: flex;
+            margin: 10px auto;
+            border: 5px solid black;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        figcaption {
+            color: rgb(45, 9, 48);
+            font-family: Trebuchet MS;
+            padding-top: 10px;
+            padding-bottom: 40px;
+        }
+
+        .image-container figure {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .image-container {
+                flex-direction: column;
+            }
+        }
+
+        #home {
+            background-color: #fcf3dc;
+            flex-direction: column;
+            align-items: center; 
+            text-align: center;
+        }
+*/ 
+        /*Footer style*/
         .enterprise {
             text-align: center;
             color: rgb(150, 215, 235);
@@ -127,41 +204,66 @@
         .valid {
             display: flex;
             justify-content: center;
-            align-items: center; 
+            align-items: center;
         }
 
-        .hand-pic, .food-pic {
-            width: 485px;
-            height: 585px;
-            padding-top: 20px;
+        footer {
+            background-color: #2b4261;
+            margin: 0;
+            margin-top: 30px;
+            padding: 0;
+            border: 1px solid #2b4261;
         }
- 
-        .image-container {
-            justify-content: center;
+
+        /*About Me page*/
+
+        #aboutMe {
+            width: 100%;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+
+        .aboutme-div {
+            float: left;
+            width: 40%;
+            padding: 10px;
+            margin-left: 150px;
+            font-size: 20px;
+            font-family: Tahoma;
+            box-sizing: border-box;
+            color: rgb(10, 49, 108);
+        }
+
+        .picofme-caption {
+            position: relative;
+            bottom: 0;
+            left: 0;
             text-align: center;
+            color: #a67336;
         }
 
-        figcaption {
-            color:rgb(114, 117, 38);
-            font-family: Trebuchet MS;
+        .image-container {
+    float: left;
+    width: 40%;
+    height: 700px;
+    box-sizing: border-box;
+    margin-top: 20px; /* Adjust the margin to create space between text and image */
+}
+
+        .picofme-pic {
+            width: auto;
+            height: 500px;
+            display: block;
         }
 
-        #home {
-            background-color: rgb(255, 244, 230);
-            margin: 0 auto;
-            padding-bottom: 85px;
+        .picofme-caption {
+            text-align: center;
+            margin-top: 10px;
+            color: rgb(117, 14, 126);
+            font-family: Trebuchet MS; 
         }
 
-        #aboutMe, #Places, #Foods, #Future {
-            background-color: rgb(255, 244, 230);
-            padding-bottom: 150px;
-        }
-
-        #aboutme-info {
-            padding-top: 30px;
-            margin: auto;
-        }
-
+        /*Places style*/
         .slideshow-div {
             justify-content: center;
             align-items: center;
@@ -169,18 +271,7 @@
             padding-top: 40px;
         }
 
-        .sideshow-content-div {
-            position: relative;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            border: 4px solid black;
-            background-color: white;
-            width: 750px;
-            height: auto;
-            max-width: 750px;
-            
-        }
+
 
         .slidepicture {
             width: 500px;
@@ -194,13 +285,14 @@
         }
 
         .slides {
-            position: relative;
+            position: inherit;
         }
 
         .slidenumber {
-            position: absolute;
-            top: 0px;
-            left: 00px;
+            position: relative;
+            width: 50px;
+            top: 40px;
+            left: 0px;
             font-size: 16px;
             color: rgb(211, 175, 223);
             background-color: rgba(70, 65, 65, 0.887);
@@ -210,95 +302,116 @@
         }
 
         .prev, .next {
-            cursor: pointer;
-            position: fixed;
-            top: 35%;
-            width: auto;
-            padding: 17px;
+            display: inline-block;
+            padding: 8px 16px;
+            vertical-align: middle;
+            overflow: hidden;
             color: white;
-            font-weight: bold;
-            font-size: 38px;
-            background-color: black;
-            border-radius: 17px;
-            transform: translateY(50%);
-            outline: none;
-            border: none;
+            background-color: grey;
+            text-align: center;
+            cursor: pointer;
+            white-space: nowrap;
+            text-decoration: none;
         }
 
         .prev {
-            left: 0;
-            margin-left: -110px;
-            position: absolute;
-            display: block;
+            margin-left: 35px;
         }
 
         .next {
-            margin-left: 683px;
-            right: 5;
-            position: absolute;
+            margin-left: 290px;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .button {
+            background-color: #f1f1f1;
+            border: none;
+            color: black;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
         }
 
 
-        @media screen and (max-width: 600px) {
-            .prev, .next {
-                width: 40px; 
-                font-size: 18px; 
-                position: absolute;
-            }
-
-            .prev {
-                left: 0;
-                margin-right: 700px;
-            }
-
-            .next {
-                right: 0;
-                margin-left: 100px;
-            }
-
-        }
-        .food-container {
-            justify-content: center;
+        .places-info {
+            text-align: left;
+            padding-bottom: 70px;
+            font-size: 20px;
+            font-family: Tahoma;
+            width: 850px;
             align-items: center;
+            margin: auto;
+            color: rgb(10, 49, 108);
+            inline-size: 650px;
+        }
+
+        /*Foods style*/
+        .food-container, .food3-container  {
             display: flex;
-        }
-
-        .fav-food1{
-            width: 350px;
-            height: 500px;
-            padding-left: 80px;
-        }
-
-        .fav-food2,.fav-food3 {
-            width: 400px;
-            height: 500px;
-        }
-
-        .fav-food2 {
-            padding-left: 50px;
-        }
-
-        .fav-food3 {
-            padding-left: 50px;
+            align-items: center;
         }
 
         .foods-info {
             text-align: center;
-            color: rgb(69, 4, 166);
-            font-size: 20px;
-            font-family: Tahoma;
+            font-size: 23px;
+            color: rgb(7, 7, 172);
+            font-family: Verdana;;
         }
 
-        .future-image1 {
-            padding-left: 50px;
-            padding-right: 90px;
+        .food1 {
+            width: 450px;
+            height: 500px;
+            padding-left: 250px;
+            padding-top: 20px;
         }
+
+        .foods-info1, .foods-info2, .foods-info3 {
+            font-family: Verdana;
+            font-size: 20px;
+            border: 1px solid rgb(21, 144, 160);
+            border-radius: 25px;
+            padding: 20px;
+            top: 220px;
+            width: 390px;
+            color: rgb(51, 51, 167);
+            margin-left: 30px;
+            box-sizing: border-box;
+        }
+
+        .food2, .food3 {
+            width: 400px;
+            height: 500px;
+            margin-top: 80px;
+        }
+
+        .food2-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 170px;
+        }
+
+        .foods-info2 {
+            margin-left: 290px;
+        }
+
+        .food3 {
+            padding-left: 250px;
+            padding-top: 20px;
+            padding-bottom: 50px;
+        }
+        
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <div class="travel">Hobby: Travel</div>
+            <div class="travel">Hobby</div>
             <ul>
                 <li><a href="#home" id="home-nav">Home</a></li>
                 <li><a href="#aboutMe" id="aboutme-nav">About Me</a></li>
@@ -309,83 +422,135 @@
         </nav>
     </header>
     <main>
+        <!-- This is the homepage page --> 
         <section id="home" class="active">
-            <img src="https://dae1313.github.io/itis3135/hobby/images/sky.png" alt="sky" class="sky-pic">
+            <img src="/hobby/images/sky.png" alt="sky" class="sky-pic">
             <p class="name-header">Welcome To My Hobby Page</p>
             <h2 class="welcome">Hobby: Travel </h2>
-            <p class="maininfo">Greetings and welcome to my hobby page where I talk about my passion for traveling. I am excited to share my adventures and expereinces with you. Please feel free to explore the webiste.</p>
+            <p class="maininfo">Greetings and welcome to my hobby page where I talk about my passion 
+                for traveling. I am excited to share my adventures and expereinces with you. Please feel free 
+                to explore the webiste.
+            </p>
             <div class="image-container">
-                <img src="https://dae1313.github.io/itis3135/hobby/images/hand.png" alt="hand" class="hand-pic">
-                <figcaption>Ba Na Hills, Vietnam</figcaption>
+                <figure>
+                    <img src="https://dae1313.github.io/itis3135/hobby/images/hand.png" alt="hand" class="hand-pic">
+                    <figcaption>Ba Na Hills, Vietnam</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://dae1313.github.io/itis3135/hobby/images/car.png" alt="car" class="car-pic">
+                    <figcaption>Atlanta Botanical Garden, Georgia</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://dae1313.github.io/itis3135/hobby/images/hike.jpg" alt="hike" class="hike-pic">
+                    <figcaption>Grandfather Mountain State Park, North Carolina</figcaption>
+                </figure>
             </div>
         </section>
 
+        <!-- This is about me page-->
         <section id="aboutMe"> 
             <h2 class="welcome" id="aboutme-info">About Me</h2>
-            <p class="firstInfo">My name is Dalena Ngo, and I derive joy from traveling in my personal life. There are several reasons behind my love for exploration, with the primary focus being food. I take pleasure in discovering new foods and learning about the different cultures.</p>
-            <p class="secondInfo">I enjoy eating different kinds of food and exploring new places. Trying local dishes is fun, and I enjoy seeing new things, like the beautiful scenery and lively markets.</p>
+            <div class="aboutme-div">
+            <p class="firstInfo">
+                Hello, I&#39;m Dalena Ngo, and one thing you should know about me is that I like 
+                to explore new places during my free time. I enjoy exploring new destinations, whether 
+                they be different states, cities, or countries. I like walking around and discovering interesting things, such as museums, mountain scenery, landmarks, theme parks, and trying out new restaurants.
+            </p>
+            <p class="secondInfo">
+                There are several reasons behind my love for exploration but the main one is the foods. 
+                I am a big foodie. I enjoy eating various cuisines and capturing those experiences through photographs as memories. 
+            </p>
+            </div>
             <div class="image-container">
-                <img src="https://dae1313.github.io/itis3135/hobby/images/food.png" alt="food" class="food-pic">
-                <figcaption>Exploring the market in Vietnam</figcaption>
+                <figure>
+                    <img src="https://dae1313.github.io/itis3135/hobby/images/picofme.png" alt="picofme" class="picofme-pic">
+                    <figcaption class="picofme-caption">Cat Cat Village, Vietnam</figcaption>
+                </figure>
             </div>
         </section>
 
+        <!-- This is places page -->
         <section id="Places">
             <h2 class="welcome" id="aboutme-info">Places</h2>
             <div class="slideshow-div">
-            <div class="sideshow-content-div">
-            <div class="sideshow-container">
-                <div class="slides">
-                    <div class="slidenumber">1 / 6</div>
-                    <img src="https://dae1313.github.io/itis3135/hobby/images/cave.png" alt="image_1" class="slidepicture">
+                <div class="sideshow-content-div">
+                    <div class="sideshow-container">
+                        <div class="slides">
+                            <div class="slidenumber">1 / 6</div>
+                            <img src="https://dae1313.github.io/itis3135/hobby/images/cave.png" alt="image_1" class="slidepicture">
+                        </div>
+                        <div class="slides">
+                            <div class="slidenumber">2 / 6</div>
+                            <img src="https://dae1313.github.io/itis3135/hobby/images/building.png" alt="image_2" class="slidepicture">
+                        </div>
+                        <div class="slides">
+                            <div class="slidenumber">3 / 6</div>
+                            <img src="https://dae1313.github.io/itis3135/hobby/images/nightlight.jpg" alt="image_3" class="slidepicture">
+                        </div>
+                        <div class="slides">
+                            <div class="slidenumber">4 / 6</div>
+                            <img src="https://dae1313.github.io/itis3135/hobby/images/pond.png" alt="image_4" class="slidepicture">
+                        </div>
+                        <div class="slides">
+                            <div class="slidenumber">5 / 6</div>
+                            <img src="https://dae1313.github.io/itis3135/hobby/images/view.png" alt="image_5" class="slidepicture">
+                        </div>
+                        <div class="slides">
+                            <div class="slidenumber">6 / 6</div>
+                            <img src="https://dae1313.github.io/itis3135/hobby/images/village.png" alt="image_6" class="slidepicture">
+                        </div>
+                    <div class="arrows">
+                        <p class="prev" onclick="plusSlides(-1)"> ❮ Prev </p>
+                        <p class="next" onclick="plusSlides(1)"> Next ❯ </p>
+                    </div>
                 </div>
-                <div class="slides">
-                    <div class="slidenumber">2 / 6</div>
-                    <img src="https://dae1313.github.io/itis3135/hobby/images/building.png" alt="image_2" class="slidepicture">
-                </div>
-                <div class="slides">
-                    <div class="slidenumber">3 / 6</div>
-                    <img src="https://dae1313.github.io/itis3135/hobby/images/nightlight.jpg" alt="image_3" class="slidepicture">
-                </div>
-                <div class="slides">
-                    <div class="slidenumber">4 / 6</div>
-                    <img src="https://dae1313.github.io/itis3135/hobby/images/pond.png" alt="image_4" class="slidepicture">
-                </div>
-                <div class="slides">
-                    <div class="slidenumber">5 / 6</div>
-                    <img src="https://dae1313.github.io/itis3135/hobby/images/view.png" alt="image_5" class="slidepicture">
-                </div>
-                <div class="slides">
-                    <div class="slidenumber">6 / 6</div>
-                    <img src="https://dae1313.github.io/itis3135/hobby/images/village.png" alt="image_6" class="slidepicture">
-                </div>
-                <div class="arrows">
-                <p class="prev" onclick="plusSlides(-1)"> < </p>
-                <p class="next" onclick="plusSlides(1)"> > </p>
-                </div>
-            </div>
             </div>
         </div>
-            <p class="firstInfo">This is pictures from places that I went these past few years. I picked the ones that was my favorite from my photo album. It was a great experience. </p>
-            <p class="secondInfo">Out of 6 pictures, I think I liked the Cat Cat village picture(the last picture). It took us a few hours to get there but the place was very beautiful. There were music, markets stalls, food, small cafes, and dancing there.</p>
+            <p class="maininfo">This is some pictures from places that I went these past few years. I picked the ones that was my favorite from my photo album.</p>
+            <p class="places-info" >Out of 6 pictures, I think I liked the Cat Cat village picture(the last picture). It took us a few hours to get there but the place was very beautiful. There were music, markets stalls, food, small cafes, and dancing there.</p>
         </section>
-
+         
+        <!-- Foods -->
         <section id="Foods">
             <h2 class="welcome" id="aboutme-info">Foods</h2>
             <p class="foods-info">This is my top 3 foods:</p>
             <div class="food-container">
-                <img src="https://dae1313.github.io/itis3135/hobby/images/beo.JPG" alt="food" class="fav-food1">
-                <img src="https://dae1313.github.io/itis3135/hobby/images/banhcuon.png" alt="food" class="fav-food2">
-                <img src="https://dae1313.github.io/itis3135/hobby/images/koreanbbq.png" alt="food" class="fav-food3">
+                <img src="https://dae1313.github.io/itis3135/hobby/images//beo.JPG" alt="food1" class="food1">
+                <p class="foods-info1">This is a vietnamese dish. It is called Banh Beo which is similar to rice cakes. 
+                    It has a small, white, round shape with a chewy texture. People can add various toppings to it, such as 
+                    minced shrimp, pork, green onions, and/or fried shallots. When eating banh beo, it's better to eat it 
+                    with a dipping sauce, like fish sauce.
+                </p>
             </div>
-            <p class="foods-info">1. Banh Beo (similar to rice cakes) </p>
-            <p class="foods-info">2.Banh Cuon (vietnamese rice rolls)</p>
-            <p class="foods-info">3. Korean bbq</p>
+
+            <div class="food2-container">
+                <p class="foods-info2"> My other favorite dish is the Banh Cuon which is a vietnamese rice rolls. 
+                    The rolls are very thin sheets made out of rice flour. People can fill the rolls with ground 
+                    pork, minced shallots, and mushrooms. This dish goes well with fish sauce, giving it a unique taste.  
+                </p>
+                <img src="https://dae1313.github.io/itis3135/hobby/images/banhcuon.png" alt="food2" class="food2">
+            </div>
+
+            <div class="food3-container">
+                <img src="https://dae1313.github.io/itis3135/hobby/images/koreanbbq.png" alt="food3" class="food3">
+                <p class="foods-info3">This is Korean BBQ, which is the best. In a restaurant, it includes raw meats such as 
+                    beef, chicken, or pork. They also provide various side dishes to accompany the meat. I like Korean BBQ 
+                    because I can cook it the way I like and eat as much as I want, especially in an all-you-can-eat restaurant.
+                </p>
+            </div>
         </section>
 
+        <!-- Future -->
         <section id="Future">
             <h2 class="welcome" id="aboutme-info">Future</h2>
-            <p class="maininfo">In the future, I wanted to travel to Paris, Australia, South Korea, and Hawaii in the future.</p>
+            <p class="foods-info">How I pick a place to travel:</p>
+            <p class="maininfo">
+                I like to do my research and set a price range so I don't spend more than intended. I look up the scenery and 
+                ratings to see if it's worth visiting. Then, I try to pick a date based on the weather and any fun events happening. 
+                Sometimes, if it's not a super long distance, I prefer to drive. For example, if I'm going to a different state, 
+                I enjoy seeing the views while driving. I like to explore and see what's there. In the future, I want to travel to Paris, 
+                Australia, South Korea, and Hawaii.
+            </p>
             <div class="food-container">
             <img src="https://dae1313.github.io/itis3135/hobby/images/australia.png" alt="future" class="future-image1">
             <img src="https://dae1313.github.io/itis3135/hobby/images/hawaii.png" alt="future" class="future-image2">
@@ -431,37 +596,37 @@
         });
     });
 
-    var slideIndex = 1;
-    showSlides(slideIndex);
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-    function currentSlide(n) {
-    showSlides(slideIndex = n);
-    }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
 
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("slides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-            slideIndex = 1;
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].classList.add("active");
+            
         }
-        if (n < 1) {
-            slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].classList.remove("active");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].classList.add("active");
-    
-}
     </script>
 </body>
 </html>
