@@ -287,12 +287,13 @@
             width: 50px;
             top: 40px;
             left: 0px;
+            font-weight: bold;
             font-size: 16px;
             color: rgb(211, 175, 223);
             background-color: rgba(70, 65, 65, 0.887);
             padding: 10px;
             padding-left: 10px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
         }
 
         .prev, .next {
@@ -343,6 +344,18 @@
             padding-top: 30px;
             margin: auto;
             color: rgb(10, 49, 108);
+        }
+
+        .slide-caption {
+            position: relative;
+            width: auto;
+            top: -45px;
+            left: 0px;
+            font-size: 16px;
+            color: rgb(211, 175, 223);
+            background-color: rgba(70, 65, 65, 0.887);
+            padding: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
         }
 
         @media (max-width: 768px) {
@@ -557,26 +570,32 @@
                         <div class="slides">
                             <div class="slidenumber">1 / 6</div>
                             <img src="https://dae1313.github.io/itis3135/hobby/images/cave.png" alt="image_1" class="slidepicture">
+                            <div class="slide-caption">Hoa Lu, Vietnam</div>
                         </div>
                         <div class="slides">
                             <div class="slidenumber">2 / 6</div>
                             <img src="https://dae1313.github.io/itis3135/hobby/images/building.png" alt="image_2" class="slidepicture">
+                            <div class="slide-caption">Bai Dinh Temple, Vietnam</div>
                         </div>
                         <div class="slides">
                             <div class="slidenumber">3 / 6</div>
                             <img src="https://dae1313.github.io/itis3135/hobby/images/nightlight.jpg" alt="image_3" class="slidepicture">
+                            <div class="slide-caption">Hoi An, Vietnam</div>
                         </div>
                         <div class="slides">
                             <div class="slidenumber">4 / 6</div>
                             <img src="https://dae1313.github.io/itis3135/hobby/images/pond.png" alt="image_4" class="slidepicture">
+                            <div class="slide-caption">Ben Cat, Vietnam</div>
                         </div>
                         <div class="slides">
                             <div class="slidenumber">5 / 6</div>
                             <img src="https://dae1313.github.io/itis3135/hobby/images/view.png" alt="image_5" class="slidepicture">
+                            <div class="slide-caption">Ha Long, Vietnam</div>
                         </div>
                         <div class="slides">
                             <div class="slidenumber">6 / 6</div>
                             <img src="https://dae1313.github.io/itis3135/hobby/images/village.png" alt="image_6" class="slidepicture">
+                            <div class="slide-caption">Cat Cat Village, Vietnam</div>
                         </div>
                     <div class="arrows">
                         <p class="prev" onclick="plusSlides(-1)"> ❮ Prev </p>
